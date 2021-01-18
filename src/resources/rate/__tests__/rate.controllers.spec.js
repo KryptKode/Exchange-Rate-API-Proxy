@@ -1,18 +1,8 @@
-import controllers from "../item.controllers"
+import controllers from "../rate.controllers"
 import { isFunction } from "lodash"
 
-describe("item controllers", () => {
-  test("has crud controllers", () => {
-    const crudMethods = [
-      "getOne",
-      "getMany",
-      "createOne",
-      "removeOne",
-      "updateOne"
-    ]
-
-    crudMethods.forEach(name =>
-      expect(isFunction(controllers[name])).toBe(true)
-    )
+describe("rate controllers", () => {
+  test("has getRate controller", () => {
+    expect(isFunction(controllers["getRate"])).toBe(true)
   })
 })

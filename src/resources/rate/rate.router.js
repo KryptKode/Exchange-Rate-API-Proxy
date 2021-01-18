@@ -1,9 +1,9 @@
 import { Router } from "express"
-import { getRate } from "./rate.controllers"
+import controllers from "./rate.controllers"
 
 const router = Router()
 
 // /api/rates
-router.route("/").get(getRate)
+router.route("/").get(controllers.getRate)
 
 export default router

@@ -1,14 +1,8 @@
-import router from "../item.router"
+import router from "../rate.router"
 
-describe("item router", () => {
-  test("has crud routes", () => {
-    const routes = [
-      { path: "/", method: "get" },
-      { path: "/:id", method: "get" },
-      { path: "/:id", method: "delete" },
-      { path: "/:id", method: "put" },
-      { path: "/", method: "post" }
-    ]
+describe("rate router", () => {
+  test("has getRate routes", () => {
+    const routes = [{ path: "/", method: "get" }]
 
     routes.forEach(route => {
       const match = router.stack.find(
