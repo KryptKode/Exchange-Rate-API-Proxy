@@ -15,7 +15,7 @@ app.use("/api/rates", rateRouter)
 export const start = async () => {
   try {
     app.listen(config.port, () => {
-      console.log(`REST API on http://localhost:${config.port}/api`)
+      console.log(`REST API on http://localhost:${config.port}/api/rates`)
     })
   } catch (e) {
     console.error(e)
