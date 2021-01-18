@@ -1,3 +1,5 @@
+# README
+
 # Exchanger API Proxy API
 
 A service integration to a public API and exposing a RESTful endpoint. The endpoint will accept requests and returns a modified response schema from the integrated API.
@@ -6,7 +8,7 @@ It integrates with the [Exchange Rate API](https://api.exchangeratesapi.io/lates
 
 - The REST endpoint `/api/rates` returns a JSON object of the latest currency rates in the following format/schema:
 
-```jsx
+```
 {
     "results": {
         "base": "",
@@ -25,13 +27,15 @@ It is built with Node/[ExpressJS](https://expressjs.com/)
 
 As an example, a request to fetch the currency exchange rates from `CZK` to `EUR,GBP,USD` might look like:
 
-```jsx
+```
 /api/rates?base=CZK&currency=EUR,GBP,USD
 ```
 
+### See the [live](https://exchange-rate-api-proxy.herokuapp.com/) [](https://exchange-rate-api-proxy.herokuapp.com/api/rates?base=CZK&currency=EUR,GBP,USD)[API](https://exchange-rate-api-proxy.herokuapp.com/)
+
 A successful response for the above request should return the following schema (of course with a more up-to-date values)
 
-```jsx
+```
 {
     "results": {
         "base": "CZK",
