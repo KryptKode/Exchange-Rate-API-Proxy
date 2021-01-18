@@ -1,5 +1,3 @@
-# README
-
 # Exchanger API Proxy API
 
 ![example workflow name](https://github.com/KryptKode/Exchange-Rate-API-Proxy/workflows/Node.js%20CI/badge.svg)
