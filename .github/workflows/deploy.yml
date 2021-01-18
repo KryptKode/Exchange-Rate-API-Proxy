@@ -24,10 +24,8 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
-
       - run: mkdir public && mv dist/* public/
       - run: git add -A && git commit -m "Updated code"
-
       - uses: akhileshns/heroku-deploy@v3.8.9
       - name: Deploy to Heroku
         with:
