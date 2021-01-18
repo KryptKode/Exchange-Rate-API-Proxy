@@ -2,6 +2,8 @@
 
 # Exchanger API Proxy API
 
+![example workflow name](https://github.com/KryptKode/Exchange-Rate-API-Proxy/workflows/Node.js%20CI/badge.svg)
+
 A service integration to a public API and exposing a RESTful endpoint. The endpoint will accept requests and returns a modified response schema from the integrated API.
 
 It integrates with the [Exchange Rate API](https://api.exchangeratesapi.io/latest) to proxy requests
@@ -31,7 +33,7 @@ As an example, a request to fetch the currency exchange rates from `CZK` to `EUR
 /api/rates?base=CZK&currency=EUR,GBP,USD
 ```
 
-### See the [live](https://exchange-rate-api-proxy.herokuapp.com/) [](https://exchange-rate-api-proxy.herokuapp.com/api/rates?base=CZK&currency=EUR,GBP,USD)[API](https://exchange-rate-api-proxy.herokuapp.com/)
+### See the [live API](https://exchange-rate-api-proxy.herokuapp.com/api/rates?base=CZK&currency=EUR,GBP,USD)
 
 A successful response for the above request should return the following schema (of course with a more up-to-date values)
 
