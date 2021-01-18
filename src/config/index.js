@@ -5,7 +5,8 @@ const baseConfig = {
   env,
   isDev: env === "development",
   isTest: env === "testing",
-  port: 3000,
+  // eslint-disable-next-line prettier/prettier
+  port: process.env.PORT || 3000,
 }
 
 let envConfig = {}
