@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "author": "Paul Akhamiogu <paulakhamiogu@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "babel src --out-dir dist",
     "test": "NODE_ENV=testing jest --forceExit --detectOpenHandles  --silent",

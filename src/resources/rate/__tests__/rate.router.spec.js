@@ -1,7 +1,7 @@
 import router from "../rate.router"
 
 describe("rate router", () => {
-  test("has getRate routes", () => {
+  test("has get route", () => {
     const routes = [{ path: "/", method: "get" }]
 
     routes.forEach(route => {
